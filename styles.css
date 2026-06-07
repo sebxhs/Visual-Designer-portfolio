@@ -536,6 +536,11 @@ h3 {
   transform: translateY(-4px);
 }
 
+.project-card:focus-visible {
+  outline: 3px solid var(--accent-strong);
+  outline-offset: 4px;
+}
+
 .project-art {
   min-height: 22rem;
   overflow: hidden;
@@ -720,6 +725,155 @@ h3 {
   height: 0.4rem;
   margin-top: 0.58rem;
   width: 0.4rem;
+}
+
+.project-link {
+  color: var(--text) !important;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+.project-link::after {
+  content: " ->";
+}
+
+.case-hero {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 1.1fr);
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.back-link {
+  color: var(--accent-strong);
+  display: inline-flex;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+}
+
+.case-hero h1 {
+  max-width: 12ch;
+}
+
+.case-hero p {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  max-width: 42rem;
+}
+
+.case-facts {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+}
+
+.case-facts div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.case-facts span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.case-facts strong {
+  color: var(--text);
+}
+
+.case-visual {
+  border: 1px solid var(--line);
+  border-radius: 2rem;
+  box-shadow: var(--shadow);
+  min-height: 34rem;
+}
+
+.case-section {
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+}
+
+.case-layout {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(12rem, 0.42fr) minmax(0, 1fr);
+}
+
+.case-kicker {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.case-copy {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.case-copy p {
+  color: var(--muted);
+  font-size: 1.08rem;
+  margin-bottom: 0;
+}
+
+.case-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.case-list li {
+  background: rgba(246, 239, 228, 0.06);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  color: var(--muted);
+  padding: 1rem;
+}
+
+.case-list strong {
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.case-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.case-gallery .project-art {
+  border: 1px solid var(--line);
+  border-radius: 1.4rem;
+  min-height: 20rem;
+}
+
+.case-nav {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.case-nav a {
+  font-weight: 900;
 }
 
 .services {
@@ -968,6 +1122,8 @@ h3 {
 
 @media (max-width: 900px) {
   .hero,
+  .case-hero,
+  .case-layout,
   .services,
   .about {
     grid-template-columns: 1fr;
@@ -998,6 +1154,11 @@ h3 {
   }
 
   .quote-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-facts,
+  .case-list {
     grid-template-columns: 1fr;
   }
 }
@@ -1049,6 +1210,10 @@ h3 {
   }
 
   .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .case-gallery {
     grid-template-columns: 1fr;
   }
 
