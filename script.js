@@ -56,7 +56,10 @@ filterButtons.forEach((button) => {
     const filter = button.dataset.filter;
 
     filterButtons.forEach((item) => {
-      item.classList.toggle("is-active", item === button);
+      const isActive = item === button;
+
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
     });
 
     projectCards.forEach((card) => {
