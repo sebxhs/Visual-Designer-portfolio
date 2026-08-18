@@ -684,37 +684,6 @@ h3 {
   width: 42%;
 }
 
-.project-art-seven {
-  background:
-    linear-gradient(90deg, rgba(23, 18, 12, 0.1) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(23, 18, 12, 0.1) 1px, transparent 1px),
-    linear-gradient(135deg, #efe3c8, #d8c59d);
-  background-size:
-    2.4rem 2.4rem,
-    2.4rem 2.4rem,
-    auto;
-}
-
-.project-art-seven span:first-child {
-  background: rgba(14, 13, 10, 0.78);
-  border-radius: 1.25rem;
-  height: 46%;
-  left: 13%;
-  top: 18%;
-  transform: rotate(-2deg);
-  width: 40%;
-}
-
-.project-art-seven span:last-child {
-  background: rgba(255, 141, 77, 0.9);
-  border-radius: 999px;
-  height: 1.1rem;
-  right: 14%;
-  top: 30%;
-  transform: rotate(-1deg);
-  width: 36%;
-}
-
 .project-content {
   padding: 1.35rem;
 }
@@ -891,69 +860,6 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 1.4rem;
   min-height: 20rem;
-}
-
-.wireframes {
-  padding-top: 1rem;
-  scroll-margin-top: 6rem;
-}
-
-.wireframe-grid {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.wireframe-card {
-  background: rgba(23, 18, 12, 0.05);
-  border: 1px solid var(--line);
-  border-radius: 1.6rem;
-  margin: 0;
-  overflow: hidden;
-}
-
-.wireframe-sheet {
-  background:
-    linear-gradient(90deg, rgba(67, 83, 122, 0.1) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(67, 83, 122, 0.1) 1px, transparent 1px),
-    #eee6d6;
-  background-size: 1.2rem 1.2rem;
-  border-bottom: 1px solid var(--line);
-  padding: 1rem;
-}
-
-.wireframe-sheet svg {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.wireframe-sheet rect,
-.wireframe-sheet line,
-.wireframe-sheet circle {
-  fill: none;
-  stroke: rgba(30, 27, 22, 0.74);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.wireframe-sheet line {
-  stroke-width: 2.6;
-}
-
-.wireframe-card figcaption {
-  display: grid;
-  gap: 0.35rem;
-  padding: 1rem;
-}
-
-.wireframe-card strong {
-  color: var(--text);
-}
-
-.wireframe-card span {
-  color: var(--muted);
 }
 
 .case-nav {
@@ -1252,8 +1158,7 @@ h3 {
   }
 
   .case-facts,
-  .case-list,
-  .wireframe-grid {
+  .case-list {
     grid-template-columns: 1fr;
   }
 }
